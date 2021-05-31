@@ -31,18 +31,25 @@ namespace Slutprojektponga
 
             Console.WriteLine("(Kosmisk röst) Oj här var de visst 2 dörrar. Vilket rum vill du gå in i rum1 eller rum2?");
 
+            string rumInput = Console.ReadLine();
+
+            if (rumInput == rum[0])
+            {
+                episkbossfight();
+            }
+            else if (rumInput == rum[1])
+            {
+                Console.WriteLine("Oj du gick in i fel rum och dog gud vad sorligt.");
+            }
+            else
+            {
+                Console.WriteLine("Dedär var inte svaret på frågan din knasboll.");
+            }
+
+
 
             Console.ReadLine();
-
-
-
-
-
-
         }
-
-
-
 
         static void episkbossfight()
         {
