@@ -35,6 +35,7 @@ namespace Slutprojektponga
 
             if (rumInput == rum[0])
             {
+                Console.WriteLine("Oj sedär en stor boss hoppas de blir en episk bossfight nu.*Episk bossfight börjar*");
                 episkbossfight();
             }
             else if (rumInput == rum[1])
@@ -59,7 +60,7 @@ namespace Slutprojektponga
             Random generator = new Random();
 
 
-            while (spelare1hp >= 0 && bosshp >= 0)
+            while (spelare1hp >= 0 && bosshp >= 0) // Så länge antingen bosshp eller spelare hp är över 0 så körs loopen.
             {
 
                 int spelarskada = generator.Next(1, 20);
